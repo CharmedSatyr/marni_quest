@@ -11,7 +11,7 @@ const Overview = () => (
       <h2>
         Overview: Marni's Quest
         <br />
-        <small>A Monster Hunting Adventure featuring Miss Marni Moonfoot</small>
+        <small>A Monster Hunting Adventure featuring Marni Moonfoot</small>
         <br />
         <small>Recommended for levels 11-15</small>
       </h2>
