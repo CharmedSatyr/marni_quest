@@ -345,7 +345,7 @@ const Footer = () => (
       </a>
     </p>
     <p>
-      The content of this project itself is licensed under the{' '}
+      The original content of this project is licensed under the{' '}
       <a
         href="https://creativecommons.org/licenses/by-sa/4.0/legalcode"
         rel="noreferrer noopener"
