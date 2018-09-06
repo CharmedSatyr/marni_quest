@@ -98,16 +98,16 @@ const Overview = () => (
     <main>
       <h3>The Contract</h3>
       <p>
-        Marni is dreaming. She sees herself flying over a silver sea, weaving among the floating
-        islands that populate the skyscape, bursting through drifting whirls of color. Her hair is
-        brilliant white and reaches the length of her body; she is dressed in black. She is very
-        old. In the distance, Marni sees a darkness in the sky. She thinks it is a storm at first,
-        but there is no sky behind, only void. A hole appears in the heavens and begins to grow
-        larger, tumbling in on itself. There is a deafening roar; powerful magic rages all around.
-        Marni feels herself being pulled inexorably toward the void. She struggles, but she cannot
-        stop her flight. She cannot get away. In a flash of color, a mass of swirling, multicolor
-        tendrils appear at the mouth of the abyss and writhe toward her. When a tentacle touches
-        her, she wakes up.
+        Marni is dreaming. She sees herself flying over and under silver seas, weaving among the
+        floating islands that populate the skyscape, bursting through drifting whirls of color,
+        against a backdrop of stars. Her hair is brilliant white and reaches the length of her body;
+        she is dressed in black. She is very old. In the distance, Marni sees a darkness. She thinks
+        it is a storm at first, but there is no sky, no stars behind, only void. A hole appears in
+        the heavens and begins to grow larger, tumbling in on itself. There is a deafening roar;
+        powerful magic rages all around. Marni feels herself being pulled inexorably toward the
+        void. She struggles, but she cannot stop her flight. She cannot get away. In a flash of
+        color, a mass of swirling, multicolor tendrils appear at the mouth of the abyss and writhe
+        toward her. When a tentacle touches her, she wakes up.
       </p>
       <p>
         On awakening from her dream, Marni must make a roll on the{' '}
