@@ -98,26 +98,56 @@ const Overview = () => (
     <main>
       <h3>The Contract</h3>
       <p>
-        Marni receives a contract via messenger: Something has been disappearing tourists in the
-        famous resort town of <Town />! <Mayor /> is offering <MayorsReward /> to eliminate the
-        threat, which has unsettled tourists. Marni is excited because that is where the famous{' '}
-        <Chef /> lives. Marni invites her adventuring friends to come with her.
+        Marni is dreaming. She sees herself flying over a silver sea, weaving among the floating
+        islands that populate the skyscape, bursting through drifting whirls of color. Her hair is
+        brilliant white and reaches the length of her body; she is dressed in black. She is very
+        old. In the distance, Marni sees a darkness in the sky. She thinks it is a storm at first,
+        but there is no sky behind, only void. A hole appears in the heavens and begins to grow
+        larger, tumbling in on itself. There is a deafening roar; powerful magic rages all around.
+        Marni feels herself being pulled inexorably toward the void. She struggles, but she cannot
+        stop her flight. She cannot get away. In a flash of color, a mass of swirling, multicolor
+        tendrils appear at the mouth of the abyss and writhe toward her. When a tentacle touches
+        her, she wakes up.
+      </p>
+      <p>
+        On awakening from her dream, Marni must make a roll on the{' '}
+        <a
+          href="https://www.dndbeyond.com/characters/classes/sorcerer#WildMagic"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Wild Magic Surge table
+        </a>
+        .
+      </p>
+      <p>
+        A few days later, a messenger arrives with a contract for Marni from an old family
+        acquaintance, <Mayor /> of the famous resort town of <Town />! Apparently, tourists have
+        been inexplicably disappearing for months, and the Mayor is offering <MayorsReward /> to
+        eliminate the threat. Marni is excited not only to see someone from home but because{' '}
+        <Town /> is where the famous <Chef /> lives. Marni invites her Witcher friends to come with
+        her.
       </p>
       {/* THE INN */}
       <div>
         <h3>The Inn</h3>
         <p>
-          The best-known inn in town is <Inn />. The party goes there. One of the sister-owners
-          there notes that yet another pie has gone missing and blames the local children.
+          The best-known inn in town is <Inn />. When the party goes there, one of the sister-owners
+          notes that yet another pie has gone missing. She blames the local children.
+        </p>
+        <p>
+          If the party tries to make any purchases or stay the night before visiting <TownHall />,
+          she refuses their gold and tells them to change their money to Cormyrean golden lions
+          first.
         </p>
       </div>
       {/* VISITING THE MAYOR */}
       <div>
-        <h3>Visiting the Mayor</h3>
+        <h3>The Mayor</h3>
         <p>
-          If the party goes to <TownHall /> to visit <Mayor />, it will be stopped by a guard and
-          chastised for not having their weapons peace-bonded, as is Cormyrean law. The guard
-          supposes they didn't even register at the border garrison!
+          If the party goes to <TownHall /> to visit <Mayor />, the adventurers will be stopped by a
+          guard and chastised for not having their weapons peace-bonded, as is Cormyrean law. The
+          guard supposes they didn't even register at the border garrison!
         </p>
         <p>
           The guard wishes to place the Witchers under arrest, but the <Mayor /> intervenes and
@@ -133,7 +163,7 @@ const Overview = () => (
           Turning to the rest of the party, <Mayor /> offers them <MayorsReward /> in exchange for
           completing his contract. According to him, someone has gone missing from the town once a
           month for the past few months, each time around the full moon. This might even have been
-          going on for longer, but its hard to keep track of when tourists come and go. Although
+          going on for longer, but its hard to keep track of when visitors come and go. Although
           local law enforcement has attempted to find the killer, it has had little luck, and, now
           that the word is out, tourism is on the wane. Victims have disappeared, often from their
           beds, but there have been no broken windows or doors, no blood, and no tracks. There has
@@ -145,10 +175,14 @@ const Overview = () => (
           again.
         </p>
         <p>
+          The mayor notes that the party can exchange its money for Cormyrean golden lions at the
+          till at the end of the hall.
+        </p>
+        <p>
           As the party leaves <TownHall />, a young woman approaches them and tells them that she
           knows people have been going missing and hopes they will keep an open mind. She says that{' '}
           <Mayor /> blames the <Hag /> for everything that goes wrong in <Town />, so she hopes they
-          will focus on the evidence. She says the <Hag /> actually provides valuable services to
+          will not act without proof. She says the <Hag /> actually provides valuable services to
           the people of the town, especially the women. This said, she drops her head and runs away.
         </p>
       </div>
@@ -208,6 +242,8 @@ const Overview = () => (
         If the party bests the FEY GUARDIAN and enters the PORTAL, they will face FEY ENCOUNTERS for
         the forseeable future but not accomplish much... and meanwhile the COUNTDOWN is ticking.
       </p>
+      {/* VISITING THE CAVE */}
+      <h3>Visiting the Cave</h3>
       <p>
         If the party leaves the PORTAL AREA, they can follow nearby paths to the CAVE and encounter
         the <Hag />, who gives her version of events and might even explain her responsibility for
@@ -220,6 +256,8 @@ const Overview = () => (
         know her plan, but that she cannot be trusted! He will again flee rather than fight to the
         death.
       </p>
+      {/* CLOSING THE PORTAL */}
+      <h3>Closing the Portal</h3>
       <p>
         If the party frees the <Hag />, she admits that she does what is necessary and will ask that
         either they acquire a human sacrifice for her to complete the barrier between worlds, or
@@ -252,10 +290,6 @@ const Overview = () => (
         Guards are watching the Witchers (for example, if they allowed the <Hag /> to try to fetch
         her own human sacrifice), those guards might be able to track the Witchers down at this
         moment and attack everybody in sight.
-      </p>
-      <p>
-        The outcome of the quest, as well as the availability of future quests, will depend on the
-        party's choices...
       </p>
     </main>
   </div>
@@ -333,7 +367,8 @@ const Settings = () => (
       </a>
       , where the party and many tourists stay. This is a charming, colorfully painted, three story
       inn, with lots to eat and helpful twin spinster sister owners, who both sport large gray buns
-      and are difficult to tell apart, except one is bossier.
+      and are difficult to tell apart, except one is bossier. The inn's wooden sign is a carving of
+      a peacock enjoying a pipe.
     </p>
     <p>
       <a href="#town-hall">
