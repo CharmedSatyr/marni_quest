@@ -22,7 +22,15 @@ const Rewards = () => (
     <p>
       CHEF'S REWARD: 2,000 golden lions + CHEF's SECRET COOKBOOK, which gives +5 to all cooking
       rolls, guarantees a modified cooking roll of 20+ yields a Heroes' Feast, and includes MAGICAL
-      RECIPES.
+      RECIPES. (OR just the{' '}
+      <a
+        href="https://half-cover.com/homebrew/feats/gourmand/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Gourmand Homebrew feat
+      </a>
+      ?)
     </p>
     <ul>
       <li>
