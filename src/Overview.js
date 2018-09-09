@@ -253,6 +253,21 @@ export const Outcomes = () => (
         </li>
       </p>
     </ul>
+    <p>
+      AUNT PEONY: she says i have been her connection to the material plane for decades since she
+      left when I was an infant. she is still trying to find her way back. There is a magical
+      disturbance now on the inner planes—feywild and the shadow realms—and she thinks she can use
+      it to get back. but not today. I should keep dreaming of her.
+      <br />
+      my powers come through the astral planes. the thread of the weave she uses to connect to me.
+      That is why magic flows right through me. great aunt peony tied the the weave itself around me
+      like a bow; that is how we remain connected.
+      <br />
+      luck as guatdian angel peony WED 10:25 PM More Info... Delete Message minauros has polluted
+      weave
+      <br />
+      purple dragon dont’t like witxhers
+    </p>
   </div>
 )
 
