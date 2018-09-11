@@ -21,7 +21,6 @@ const Settings = () => (
       also clear that it has seen better days. Cormyr has a number of unusual laws. For example,
       residents may not harm cats and must submit to searches by the Purple Dragons on request.
     </p>
-    FILTER
     <p>
       <a href="#inn">
         <Inn />

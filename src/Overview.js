@@ -2,13 +2,15 @@ import React from 'react'
 import marni from './Marni_Portrait.jpg'
 import { Inn, Restaurant, Town, TownHall } from './Settings'
 import { Banderhobb, Chef, Hag, Mayor, Officer } from './Characters'
-import { MagicalIngredients, MayorsReward } from './Rewards'
+import { ChefsReward, MagicalIngredients, MayorsReward } from './Rewards'
 
 /*** OVERVIEW ***/
 const Overview = () => (
   <div className="overview">
     <header>
-      <img alt="Portrait of Marni" src={marni} />
+      <a href="https://twitter.com/Gorremhome" rel="noopener noreferrer" target="_blank">
+        <img alt="Portrait of Marni" src={marni} title="Credit: Devon Cady-Lee" />
+      </a>
       <h2>
         Marni's Quest: The Magical Muffins of Goodberry Springs
         <br />
@@ -20,16 +22,18 @@ const Overview = () => (
     <main>
       <h3>The Contract</h3>
       <p>
-        Marni is dreaming. She sees herself flying over and under silver seas, weaving among the
-        floating islands that populate the skyscape, bursting through drifting whirls of color,
-        against a backdrop of stars. Her hair is brilliant white and reaches the length of her body;
-        she is dressed in black. She is very old. In the distance, Marni sees a darkness. She thinks
-        it is a storm at first, but there is no sky, no stars behind, only void. A hole appears in
-        the heavens and begins to grow larger, tumbling in on itself. There is a deafening roar;
-        powerful magic rages all around. Marni feels herself being pulled inexorably toward the
-        void. She struggles, but she cannot stop her flight. She cannot get away. In a flash of
-        color, a mass of swirling, multicolor tendrils appear at the mouth of the abyss and writhe
-        toward her. When a tentacle touches her, she wakes up.
+        Marni is dreaming. She sees herself flying between silver seas, weaving among the starry
+        skyscape's floating islands, bursting through drifting whirls of color. Her hair is
+        brilliant white and reaches the length of her body; she is dressed in black. In the
+        distance, Marni sees a place of darkness. She thinks it is a storm at first, but there is no
+        sky, no stars behind, only void. A hole appears in the heavens and begins to grow larger,
+        tumbling in on itself. The silver seas above and below swell and churn around it. There is a
+        deafening roar, then all is silent; time seems to slow. Marni feels herself being pulled
+        inexorably toward the void. She struggles, but she cannot stop her flight. She cannot get
+        away. There is a flash of color and a deep, inarticulate moan, as if from the throat of
+        space itself. Suddenly everything is happening too fast. A mass of swirling, multicolor
+        tendrils appear at the mouth of the abyss and writhe toward her. When a tentacle touches
+        her, she wakes up.
       </p>
       <p>
         On awakening from her dream, Marni must make a roll on the{' '}
@@ -59,15 +63,15 @@ const Overview = () => (
         </p>
         <p>
           If the party tries to make any purchases or stay the night before visiting <TownHall />,
-          she refuses their gold and tells them to change their money to Cormyrean golden lions
-          first.
+          she refuses their gold and tells them to change their money to Cormyrean golden lions at
+          the <TownHall /> first.
         </p>
       </div>
       {/* VISITING THE MAYOR */}
       <div>
         <h3>The Mayor</h3>
         <p>
-          If the party goes to <TownHall /> to visit <Mayor />, the adventurers will be stopped by a
+          When the party goes to <TownHall /> to visit <Mayor />, the adventurers are stopped by a
           guard and chastised for not having their weapons peace-bonded, as is Cormyrean law. The
           guard supposes they didn't even register at the border garrison!
         </p>
@@ -77,24 +81,25 @@ const Overview = () => (
           focuses on Marni in particular. He was intrigued to discover that a Moonfoot girl is not
           only a sorceress, but a Witcher! Now that he sees her, Marni reminds him of her Great Aunt
           Peony Brandywood, who used to live in the forest near the Ten Hills and dance with
-          Faeries, or something like that. "She wasn't proper folk either!" he chuckles. "She used
-          to traipse about the Astral Plane in her Robe of Stars, but we figure she eventually got
-          stuck out there." Marni is astonished; she hadn't heard about Aunt Peony before.
+          Faeries, or something like that. "She wasn't proper folk either!" he chuckles. "She'd go
+          missing for days on end and said she traiped about on the Astral Plane! We figure she
+          eventually got stuck out there. Good riddance, some thought." Marni is astonished; she
+          hadn't heard about Aunt Peony before.
         </p>
         <p>
           Turning to the rest of the party, <Mayor /> offers them <MayorsReward /> in exchange for
           completing his contract. According to him, someone has gone missing from the town once a
           month for the past few months, each time around the full moon. This might even have been
-          going on for longer, but its hard to keep track of when visitors come and go. Although
-          local law enforcement has attempted to find the killer, it has had little luck, and, now
-          that the word is out, tourism is on the wane. Victims have disappeared, often from their
-          beds, but there have been no broken windows or doors, no blood, and no tracks. There have
-          only been wisps of shadow and a few strands of foul-smelling brown slime left at the
-          scene. <Mayor /> does not know who could be responsible, but he suspects the involvement
-          of the <Hag />, who lives in a forest a few miles away from town. At the very least, she
-          might be able to provide more information. When the party accepts, the Mayor writes up a
-          proof of mercenary employment, suggesting that they show it to local law enforcement if
-          they are questioned again.
+          going on for longer, but its hard to keep track of when visitors come and go. Although the
+          Purple Dragons have attempted to find the killer, they have had little luck, and, now that
+          the word is out, tourism is on the wane. Victims have disappeared, often from their beds,
+          but there have been no broken windows or doors, no blood, and no tracks. There have only
+          been wisps of shadow and a few strands of foul-smelling brown slime left at the scene.{' '}
+          <Mayor /> does not know who could be responsible, but he suspects the involvement of the{' '}
+          <Hag />, who lives in a forest a few miles away from town. At the very least, she might be
+          able to provide more information. When the party accepts, the Mayor writes up a proof of
+          mercenary employment, suggesting that they show it to local law enforcement if they are
+          questioned again.
         </p>
         <p>
           The mayor notes that the party can exchange its money for Cormyrean golden lions at the
@@ -114,19 +119,19 @@ const Overview = () => (
         <p>
           Marni desperately wants to meet <Chef />. His restaurant, <Restaurant />, is open between
           the hours of 5pm and 1am daily. If the party eats there, it will be treated to an
-          incredible Heroes' Feast for 10gp each. Marni is in awe and decides that she wants to open
-          a restaurant herself, if it can be like <Restaurant />. She begs the waitstaff to see the
-          chef.
+          incredible Heroes' Feast for 10gp each. Marni is in awe and decides that, once her Wild
+          Magic is under control, she's going to pursue her dream of owning a restaurant herself.
+          She begs the waitstaff to see the chef.
         </p>
         <p>
           <Chef />, hearing there are Witchers in the restaurant, gladly comes out to greet them and
-          is thrilled with Marni's praise. He asks them to come back to a private room and explains
+          is thrilled with Marni's praise. He asks them to come back to the kitchen and explains
           that, although he hopes to keep his restaurant going, there has always been trouble
-          getting his magical ingredients, especially lately. He has even had some prepared dishes
-          vanish and ingredient stores go empty. He asks the party if it would be willing to collect
-          some ingredients for him. He gives Marni a list of <MagicalIngredients /> to find on their
-          travels and offers the adventurers a CHEF'S REWARD if they can bring them and determine
-          the source of the magic.
+          getting his magical ingredients, especially lately. There are claw marks on some of the
+          cupboards! He has even had some prepared dishes vanish and ingredient stores go empty. He
+          asks the party if it would be willing to collect some ingredients for him. He gives Marni
+          a list of <MagicalIngredients /> to find on their travels and offers the adventurers a{' '}
+          <ChefsReward /> if they can bring them and determine the source of the magic.
         </p>
         <p>
           As the party leaves <Restaurant />, it is confronted by another of the patrons, who
@@ -228,26 +233,26 @@ export const Outcomes = () => (
     <ul>
       <p>
         <li>
-          Rescue the <Hag /> and kill the FEY GUARDIAN -> CHEF'S REWARD, CHEF'S BONUS, TOWN SAVED |
-          <MayorsReward /> lost | possible FUTURE QUEST;
+          Rescue the <Hag /> and kill the FEY GUARDIAN -> <ChefsReward />, CHEF'S BONUS, TOWN SAVED
+          |<MayorsReward /> lost | possible FUTURE QUEST;
         </li>
       </p>
       <p>
         <li>
-          Kill both the <Hag /> and the FEY GUARDIAN -> TOWN SAVED, CHEF'S REWARD, <MayorsReward />{' '}
-          | CHEF'S BONUS LOST | no FUTURE QUEST;
+          Kill both the <Hag /> and the FEY GUARDIAN -> TOWN SAVED, <ChefsReward />,{' '}
+          <MayorsReward /> | CHEF'S BONUS LOST | no FUTURE QUEST;
         </li>
       </p>
       <p>
         <li>
           Kill the <Hag /> but not the FEY GUARDIAN -> if within 5 days, <MayorsReward /> | TOWN
-          LOST, no CHEF'S REWARD, CHEF'S BONUS LOST | no FUTURE QUEST;
+          LOST, no <ChefsReward />, CHEF'S BONUS LOST | no FUTURE QUEST;
         </li>
       </p>
       <p>
         <li>
           Rescue the <Hag /> and ignore the FEY GUARDIAN -> barrier will temporarily be restored,
-          but situation will revert as soon as the party leaves TOWN -> CHEF'S REWARD |{' '}
+          but situation will revert as soon as the party leaves TOWN -> <ChefsReward /> |{' '}
           <MayorsReward />
           lost, CHEF'S BONUS LOST, TOWN LOST | no FUTURE QUEST
         </li>
@@ -266,7 +271,7 @@ export const Outcomes = () => (
       luck as guatdian angel peony WED 10:25 PM More Info... Delete Message minauros has polluted
       weave
       <br />
-      purple dragon dont’t like witxhers
+      purple dragon dont’t like witxhers Aunt Peony wears a Robe of Stars
     </p>
   </div>
 )

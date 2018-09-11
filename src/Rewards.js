@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Chef, Hag, Mayor } from './Characters'
+import { Chef, Hag, Mayor, Officer } from './Characters'
 import { Town } from './Settings'
 
 // Reward
@@ -8,6 +8,7 @@ export const MayorsReward = () => <Link to={`/rewards#mayor`}>a reward</Link>
 export const MagicalIngredients = () => (
   <Link to={`/rewards#magical-ingredients`}>magical ingredients</Link>
 )
+export const ChefsReward = () => <Link to={`/rewards#chef`}>a reward</Link>
 
 const Rewards = () => (
   <div>
@@ -20,7 +21,7 @@ const Rewards = () => (
       Faerûn. The total payout can be converted to 10,000 gold pieces total, for the party.
     </p>
     <p>
-      CHEF'S REWARD: 2,000 golden lions + CHEF's SECRET COOKBOOK, which gives +5 to all cooking
+      <a href="#chef">Chef's Reward</a>: CHEF's SECRET COOKBOOK, which gives +5 to all cooking
       rolls, guarantees a modified cooking roll of 20+ yields a Heroes' Feast, and includes MAGICAL
       RECIPES. (OR just the{' '}
       <a
@@ -30,13 +31,12 @@ const Rewards = () => (
       >
         Gourmand Homebrew feat
       </a>
-      ?)
+      , TBD.)
     </p>
     <ul>
       <li>
         BONUS GAINED: Marni recieves a shipment of <MagicalIngredients /> once per week from a
-        grateful
-        <Chef />.
+        grateful <Chef />.
       </li>
       <li>
         BONUS LOST: <Chef /> loses reputation and CHEF's RESTAURANT soon after, and Marni blames
@@ -71,7 +71,7 @@ const Rewards = () => (
     </p>
 
     <p>
-      TOWN LOST: <MayorsReward /> is unavailable, ROYAL OFFICER accuses Witchers of misdeeds and has
+      TOWN LOST: <MayorsReward /> is unavailable, <Officer /> accuses Witchers of misdeeds and has
       the army sent to <Town /> to save it. Witchers must leave <Town /> immediately. <Town /> is so
       damaged that it is unavailable for future visits or FUTURE QUEST.
     </p>
