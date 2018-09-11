@@ -140,7 +140,14 @@ nav .nav-logo img {
 }
 
 /* Purple Dragon Shield */
-.content .settings img {
+.settings img {
+  float: right;
+  height: 300px;
+  margin-right: 15px;
+}
+
+/* Green Hag */
+.characters img {
   float: right;
   height: 300px;
   margin-right: 15px;

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Inn, Restaurant, Town, TownHall } from './Settings'
 import { MagicalIngredients } from './Rewards'
+import HagPic from './green_hag.jpg'
 
 // Characters
 export const Marni = () => <Link to={`/characters#marni`}>Marni Moonfoot</Link>
@@ -17,7 +18,7 @@ export const Banderhobb = () => (
 )
 
 export const Characters = () => (
-  <div>
+  <div className="characters">
     <h2>Characters</h2>
     <p>
       <a href="#mayor">
@@ -48,6 +49,7 @@ export const Characters = () => (
     </p>
 
     <p>
+      <img alt="Green Hag" className="hag" src={HagPic} />
       <a href="#hag">
         <Hag />
       </a>
