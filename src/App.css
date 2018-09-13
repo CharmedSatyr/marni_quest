@@ -37,6 +37,7 @@ html {
 
 body {
   background-color: var(--light);
+/*  background: url('./background_texture.png') repeat; */
   color: var(--darkest);
   font-family: Roboto, Helvetica, sans-serif;
   line-height: 1.4;
@@ -112,7 +113,6 @@ nav .nav-logo img {
   margin-left: 2px;
   margin-right: 2px;
 }
-
 
 .content {
   padding-left: var(--left-right-padding);
