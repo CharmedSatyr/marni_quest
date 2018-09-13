@@ -20,12 +20,6 @@ const NavBar = () => (
         <Link to="/settings">Settings</Link>
       </div>
       <div className="nav-link">
-        <Link to="/mechanics">Mechanics</Link>
-      </div>
-      <div className="nav-link">
-        <Link to="/outcomes">Outcomes</Link>
-      </div>
-      <div className="nav-link">
         <Link to="/rewards">Rewards</Link>
       </div>
       <div>

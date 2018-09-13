@@ -1,24 +1,36 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Chef, Hag, Mayor, Officer } from './Characters'
+import { Mayor, Peony } from './Characters'
 import { Town } from './Settings'
+import robe from './robe.jpg'
 
 // Reward
-export const MayorsReward = () => <Link to={`/rewards#mayor`}>a reward</Link>
+const names = {
+  mayor: "Mayor's reward",
+  robe: 'The Robe of Stars',
+}
+export const MayorsReward = () => <Link to={`/rewards#mayor`}>{names.mayor}</Link>
 export const MagicalIngredients = () => (
   <Link to={`/rewards#magical-ingredients`}>magical ingredients</Link>
 )
+export const MagicalRecipes = () => <Link to={`/rewards#magical-recipes`}>magical recipes</Link>
 export const ChefsReward = () => <Link to={`/rewards#chef`}>a reward</Link>
+export const Robe = () => (
+  <a
+    href="https://www.dndbeyond.com/magic-items/robe-of-stars"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    {names.robe}
+  </a>
+)
 
 const Rewards = () => (
-  <div>
+  <div className="rewards">
     <h2>Rewards</h2>
     <p>
-      <a href="#mayor">Mayor's Reward</a>: <Mayor /> promises 20,000 gold pieces on completion of
-      the contract. However, if this is paid out, it will be paid in golden lions, the local
-      Cormyrean currency. Due to fluctuations in local markets, and pressures upon the local
-      magistrates, golden lions are worth approximately 1/2 of gold currency used elsewhere in
-      Faerûn. The total payout can be converted to 10,000 gold pieces total, for the party.
+      <a href="#mayor">Mayor's Reward</a>: <Mayor /> promises 10,000 golden lions, roughly equal in
+      value to the same in gold pieces, on completion of the contract.
     </p>
     <p>
       <a href="#chef">Chef's Reward</a>: CHEF's SECRET COOKBOOK, which gives +5 to all cooking
@@ -33,16 +45,6 @@ const Rewards = () => (
       </a>
       , TBD.)
     </p>
-    <ul>
-      <li>
-        BONUS GAINED: Marni recieves a shipment of <MagicalIngredients /> once per week from a
-        grateful <Chef />.
-      </li>
-      <li>
-        BONUS LOST: <Chef /> loses reputation and CHEF's RESTAURANT soon after, and Marni blames
-        herself. FUTURE QUEST might be able to reverse this outcome.
-      </li>
-    </ul>
     <p>
       <a href="#magical-ingredients">Magical Ingredients</a>: Glowing mushrooms, levitating carrots,
       leafy vegetables that wiggle when no one is looking, multicolored vines, and other plants that
@@ -51,9 +53,11 @@ const Rewards = () => (
     </p>
 
     <p>
-      MAGICAL RECIPES (can only be created by cooks with <MagicalIngredients />, plus additional
-      ingredient cost of 2 sp each):
+      <a href="#magical-recipes">Magical Recipes</a>: These special treats can only be created by
+      cooks with <MagicalIngredients />, plus additional ingredients that cost a total of 2 sp per
+      recipe batch:
     </p>
+    <img src={robe} alt="The Robe of Stars" />
     <ul>
       <li>
         Muffins of Strong Mind: Render eaters immune to Charm or Fear effects for 6 hours. Takes 3
@@ -64,20 +68,9 @@ const Rewards = () => (
       <li>TBD</li>
       <li>TBD</li>
     </ul>
-
     <p>
-      TOWN SAVED: The Witchers don't receive any extra reward, but the town is available for future
-      visits and free for relaxation. Townsfolk show lots of appreciation. FUTURE QUEST possible.
-    </p>
-
-    <p>
-      TOWN LOST: <MayorsReward /> is unavailable, <Officer /> accuses Witchers of misdeeds and has
-      the army sent to <Town /> to save it. Witchers must leave <Town /> immediately. <Town /> is so
-      damaged that it is unavailable for future visits or FUTURE QUEST.
-    </p>
-
-    <p>
-      FUTURE QUEST: TBD involving <Hag />
+      <a name="robe">{names.robe}</a> was used by <Peony /> to teleport to and from the Astral Plane
+      until a lovesick Githyanki's <em>geas</em> prevented her from using it.
     </p>
   </div>
 )

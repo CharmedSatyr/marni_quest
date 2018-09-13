@@ -1,16 +1,16 @@
 import React from 'react'
-import marni from './Marni_Portrait.jpg'
 import { Inn, Restaurant, Town, TownHall } from './Settings'
-import { Banderhobb, Chef, Hag, Mayor, Officer } from './Characters'
-import { ChefsReward, MagicalIngredients, MayorsReward } from './Rewards'
+import { Banderhobb, Chef, Hag, Marni, Mayor, SmallFey, Officer, Peony, Kraken } from './Characters'
+import { ChefsReward, MagicalIngredients, MagicalRecipes, MayorsReward, Robe } from './Rewards'
+import planes from './planes.png'
+// import contract from './letter.png'
+import astral_plane from './astral_plane.jpg'
 
 /*** OVERVIEW ***/
 const Overview = () => (
   <div className="overview">
+    <img alt="The Planes of Existence" src={planes} />
     <header>
-      <a href="https://twitter.com/Gorremhome" rel="noopener noreferrer" target="_blank">
-        <img alt="Portrait of Marni" src={marni} title="Credit: Devon Cady-Lee" />
-      </a>
       <h2>
         Marni's Quest: The Magical Muffins of Goodberry Springs
         <br />
@@ -22,18 +22,17 @@ const Overview = () => (
     <main>
       <h3>The Contract</h3>
       <p>
-        Marni is dreaming. She sees herself flying between silver seas, weaving among the starry
-        skyscape's floating islands, bursting through drifting whirls of color. Her hair is
-        brilliant white and reaches the length of her body; she is dressed in black. In the
+        Marni is dreaming. She sees herself flying between silver seas above and below, weaving
+        among the starry skyscape's floating islands, bursting through drifting whirls of color. Her
+        hair is brilliant white and reaches the length of her body; she is dressed in black. In the
         distance, Marni sees a place of darkness. She thinks it is a storm at first, but there is no
-        sky, no stars behind, only void. A hole appears in the heavens and begins to grow larger,
-        tumbling in on itself. The silver seas above and below swell and churn around it. There is a
-        deafening roar, then all is silent; time seems to slow. Marni feels herself being pulled
-        inexorably toward the void. She struggles, but she cannot stop her flight. She cannot get
-        away. There is a flash of color and a deep, inarticulate moan, as if from the throat of
-        space itself. Suddenly everything is happening too fast. A mass of swirling, multicolor
-        tendrils appear at the mouth of the abyss and writhe toward her. When a tentacle touches
-        her, she wakes up.
+        sky, no stars behind, only void. The darkness begins to grow larger, tumbling in on itself.
+        The seas above and below flex like magnetic mirrors. A deafening roar, and all is silent;
+        time seems to stop. Marni feels herself being pulled inexorably toward the void. She
+        struggles, but she cannot stop her flight. She cannot get away. There is a flash of color
+        and a deep, inarticulate moan, as if from the throat of space itself. Suddenly everything is
+        happening too fast. A mass of swirling, multicolor tendrils appear at the mouth of the abyss
+        and writhe toward her. When a tentacle touches her, she wakes up.
       </p>
       <p>
         On awakening from her dream, Marni must make a roll on the{' '}
@@ -46,13 +45,13 @@ const Overview = () => (
         </a>
         .
       </p>
-      <p>
-        A few days later, a messenger arrives with a contract for Marni from an old family
-        acquaintance, <Mayor /> of the famous resort town of <Town />! Apparently, tourists have
-        been inexplicably disappearing for months, and the Mayor is offering <MayorsReward /> to
-        eliminate the threat. Marni is excited not only to see someone from home but because{' '}
-        <Town /> is where the famous <Chef /> lives. Marni invites her Witcher friends to come with
-        her.
+      <p className="contract">
+        {/*<img alt="a sealed envelope" src={contract} />*/}A few days later, a messenger arrives
+        with a contract for Marni from an old family acquaintance, <Mayor /> of the famous resort
+        town of <Town />! Apparently, tourists have been inexplicably disappearing for months, and
+        the Mayor is offering a <MayorsReward /> to eliminate the threat. Marni is excited not only
+        to see someone from home but because <Town /> is where the famous <Chef /> lives. Marni
+        invites her Witcher friends to come with her.
       </p>
       {/* THE INN */}
       <div>
@@ -87,7 +86,7 @@ const Overview = () => (
           hadn't heard about Aunt Peony before.
         </p>
         <p>
-          Turning to the rest of the party, <Mayor /> offers them <MayorsReward /> in exchange for
+          Turning to the rest of the party, <Mayor /> offers them a <MayorsReward /> in exchange for
           completing his contract. According to him, someone has gone missing from the town once a
           month for the past few months, each time around the full moon. This might even have been
           going on for longer, but its hard to keep track of when visitors come and go. Although the
@@ -106,7 +105,7 @@ const Overview = () => (
           till at the end of the hall.
         </p>
         <p>
-          As the party leaves <TownHall />, a young woman approaches them and tells them that she
+          As the party leaves <TownHall />, a YOUNG WOMAN approaches them and tells them that she
           knows people have been going missing and hopes they will keep an open mind. She says that{' '}
           <Mayor /> blames the <Hag /> for everything that goes wrong in <Town />, so she hopes they
           will not act without proof. She says the <Hag /> actually provides valuable services to
@@ -135,12 +134,13 @@ const Overview = () => (
         </p>
         <p>
           As the party leaves <Restaurant />, it is confronted by another of the patrons, who
-          follows them out. This is <Officer />, who requires to search their bags and inspect their
-          mercenary contract or adventurer's license. If he is contested, he will summon Purple
-          Dragons to aid him. When he is satisfied, <Officer /> says strange events of late,
-          including the disappearances, have led him to consider adding a Purple Dragons garrison to{' '}
-          <Town />, though this would undoubtedly negatively impact tourism by detracting from the
-          cozy atmosphere.
+          follows them out. This is <Officer />, who explicitly distrusts Witchers and requires to
+          search their bags and inspect their mercenary contract or adventurer's license. If he is
+          contested, he will summon Purple Dragons to aid him. When he is satisfied, <Officer />{' '}
+          says strange events of late, including the disappearances, have led him to consider adding
+          a Purple Dragons garrison to <Town />, though this would undoubtedly negatively impact
+          tourism by detracting from the cozy atmosphere. <Officer /> advises the party to finish
+          its business quickly and get out of <Town />.
         </p>
       </div>
       {/* VISITING THE HAG */}
@@ -148,16 +148,16 @@ const Overview = () => (
         <h3>Visiting the Enchantress</h3>
         <p>
           When going to visit the <Hag />, there is a pie tin on the road on the way there. Party
-          finds her COTTAGE is smoldering.
+          finds her cottage is smoldering.
         </p>
         <p>
-          Looking around, party encounters SMALL FEY carrying a few <MagicalIngredients /> and
-          assorted prepared MAGICAL RECIPES and other foods.
+          Looking around, the party encounters a <SmallFey /> carrying a few <MagicalIngredients />{' '}
+          and assorted prepared <MagicalRecipes /> and other foods.
         </p>
       </div>
       <p>
-        Soon after the SMALL FEY encounter, if the party continues to explore the nearby area, they
-        will roll for FEY ENCOUNTER and discover a PORTAL beyond.
+        Soon after the <SmallFey /> encounter, if the party continues to explore the nearby area,
+        they will roll for FEY ENCOUNTER and discover a PORTAL beyond.
       </p>
       <p>
         If party attempts to enter the portal, they will encounter the FEY GUARDIAN, who will escape
@@ -169,110 +169,165 @@ const Overview = () => (
         If the party bests the FEY GUARDIAN and enters the PORTAL, they will face FEY ENCOUNTERS for
         the forseeable future but not accomplish much... and meanwhile the COUNTDOWN is ticking.
       </p>
+      {/* ENTERING THE PORTAL */}
+      <h3>Entering the Portal</h3>
+      <p>
+        If a member of the party enters the portal, it will encounter an area that appears
+        distorted. Spells cast roll 1d4, yielding one of the following results:
+      </p>
+      <ol>
+        <li>Dead Magic (the spell fizzles)</li>
+        <li>Wild Magic (the spell works but forces a roll on the Wild Magic table)</li>
+        <li>The spell functions normally</li>
+        <li>Reroll</li>
+      </ol>
+      <p>
+        Things happen for no reason. Some things are ethereal. Some things are fluorescently colored
+        and glow. Creatures are abominations, etc.
+      </p>
+      <p>
+        With a little walking, the party can find Marni's Aunt Peony. Peony tells them to get the
+        fuck out! This whole world's collapsing. But if the party rescues her from the{' '}
+        <a
+          href="https://www.dndbeyond.com/homebrew/creations/monsters/159667-planar-kraken/edit"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Planar Kraken
+        </a>
+        , Aunt Peony will leave with them and give Marni her Cloak of Stars. She will also be able
+        to close the portal after she gets some rest... ?
+      </p>
       {/* VISITING THE CAVE */}
       <h3>Visiting the Cave</h3>
       <p>
-        If the party leaves the PORTAL AREA, they can follow nearby paths to the CAVE and encounter
-        the <Hag />, who gives her version of events and might even explain her responsibility for{' '}
-        <MagicalIngredients /> if asked. However, she will be reluctant to admit responsibility for
-        the missing tourists.
+        The party can follow nearby paths to the CAVE. As the party proceeds through the cave, it
+        catches sight of a <Hag /> in a cave room. She looks concerned. The <Banderhobb /> attacks.
+        The party may then approach the <Hag />. She will beg the Witchers not to attack!
       </p>
       <p>
-        When the party tries to free her, they are attacked again by the FEY GUARDIAN, who explains
-        that the <Hag /> performs blood magic and his Mistress abhors her. He says that he does not
-        know her plan, but that she cannot be trusted! He will again flee rather than fight to the
-        death.
+        If she is allowed to speak, the <Hag /> will explain that she has been trying to firm a
+        weakness in the boundaries among the planes. The gods and evil ones, fey and shadow, usually
+        have dominion over their own realms, but the transitive planes among them&mdash;the Astral
+        and Ethereal Planes&mdash;have become poisoned. Where there should be one door, there are
+        multitudes. The <Hag /> mourns the death of her <Banderhobb />. She says that the beauty of{' '}
+        <Town /> ultimately stems from the thin barriers between it and the Feywild; the town's
+        glorious natural attractions are, in fact, not of this world. (Even down to the magical
+        plants that <Chef /> uses at his restaurant!). However, that fact has made <Town /> more
+        susceptible to the troubles taking root in She explains that blood sacrifice has been
+        necessary to staunch the invasion of Fey since the barriers among worlds have been weakening
+        even further of late. She knows no other way. Though she plays only a small part in
+        preventing it, <Hag /> says that if the planes collapse into one another, the end is a
+        juxtaposition of all things, a multiverse of chaos and the collision of the planes.
+      </p>
+      <p>
+        If the <Hag /> is killed, the party will find her Blood Magic Tome in the cave, which
+        includes notes in the margin that outline the information above as well as the rites to
+        permanently seal a portal with a human sacrifice.
       </p>
       {/* CLOSING THE PORTAL */}
       <h3>Closing the Portal</h3>
+      <h4>If the Hag Is Alive...</h4>
       <p>
-        If the party frees the <Hag />, she admits that she does what is necessary and will ask that
-        they stay out of the way to allow her <Banderhobb /> to acquire a human sacrifice so she can
-        once again close barrier between worlds, or else acquire one themselves.
+        If the <Hag /> is alive, she will request the party bring her a human sacrifice so she can
+        close the portal. The party can go into town and use whatever means are at its disposal to
+        capture a sacrificial victim while avoiding Purple Dragon patrols.
       </p>
+      <ul>
+        <li>
+          <h5>Kidnapping a tourist</h5>
+          <p>
+            If the party acquires a human sacrifice undetected, the <Hag /> takes it and asks them
+            to leave the cave. The portal soon closes. The <MayorsReward /> becomes unavailable, as
+            yet another tourist just went missing, and there is no evidence the abductions will
+            stop. Additionally, <Officer /> takes an opportunity to sneer at the Witchers for their
+            ineffectiveness and suggests they get out of town soon if they know what's good for
+            them.
+          </p>
+          <p>
+            This course of action would be extremely distressing to <Marni /> and might affect her
+            future development.
+          </p>
+        </li>
+        <li>
+          <h5>Refusing to kidnap</h5>
+          <p>
+            The party may refuse to help the <Hag /> find another victim but leave her alive and
+            mobile. In this case, she will go to try to gather a sacrifice herself if she is not
+            convinced that the Witchers have a better plan. However, <Officer />
+            's troops will find and arrest her. The <Hag /> will try to defend her actions (she was
+            attempting to steal a child through a window) by saying the party understands what is at
+            stake and sanctions her actions. The party achieves a "Wanted" status in town, meaning
+            it will be pursued and attacked by Purple Dragons, and must break the <Hag /> out of the
+            jail in the basement of <TownHall /> and find her a sacrifice if it wants her to
+            complete her magic.
+          </p>
+        </li>
+      </ul>
+      <h4>If the Hag is Dead...</h4>
       <p>
-        If the party kills the <Banderhobb />, it must acquire a human sacrifice or allow the{' '}
-        <Hag /> to collect one herself.
+        If the <Hag /> has been killed or incapacitated, the party should find some other way of
+        closing the PORTAL or risk losing the town. There are at least two ways to do this.
       </p>
+      <ul>
+        <li>
+          <h5>Using blood magic</h5>
+          <p>
+            A mage in the party itself can attempt to perform a spell to close the PORTAL using the
+            Blood Magic Tome discovered in the CAVE. The Blood Magic Tome will instruct the mage how
+            to sacrifice a humanoid, and cook its blood together with certain magical plants to seal
+            the portal. If the party starts this in the CAVE, it is seen by the YOUNG WOMAN, who has
+            come to check on the <Hag />. If she gets back to the <Town />, she will inform{' '}
+            <Officer /> of the Witchers' activities, and they will suffer a "Wanted" status in town
+            and lose access to the <MayorsReward />.
+          </p>
+          <p>
+            This course of action would be extremely distressing to <Marni /> and might affect her
+            future development.
+          </p>
+        </li>
+        <li>
+          <h5>Invading the portal</h5>
+          <p className="invasion">
+            <img alt="astral plane" src={astral_plane} />
+            This is the "good" course of action but also the most dangerous. If the party wants, it
+            can invade the PORTAL. There, it will eventually find {/*<Peony />*/} and the{' '}
+            {/*<Kraken />*/}. The party can go home once it defeats the <Kraken />, heads held
+            high&mdash;so long as they escape the realm before the portal collapses. The Mayor will
+            suppose they deserve <MayorsReward />.
+          </p>
+          <p>
+            <Peony /> shares her background with Marni. She also provides a notable{' '}
+            <em>mea culpa</em>: On the day Marni was born, Peony visited her sister and saw the
+            infant, and then she teleported to the Astral Plane, where she had ongoing research.
+            This time, a Githyanki mage who had a crush on her cast a <em>geas</em> that prevented
+            her from ever trying to leave the Astral Plane without him. In the decades that
+            followed, she thought constantly about her home&mdash;specifically about Marni, her only
+            niece, whom she remembered vividly. She figures the connection, on top of her frequent
+            magical attempts and pleas to various entities to break the <em>geas</em> and let her go
+            home, caused something to rub off on Marni from one plane or other&mdash;no telling
+            which! But, no doubt about it, Marni's got a thread of the weave tied around her like a
+            bow. <Peony /> figures either something about the <Kraken /> broke the <em>geas</em>, or
+            that Githyanki mage is somewhere on Toril. Either way, Peony kisses the Prime's sweet
+            ground.
+          </p>
+          <p>
+            <Peony /> warns the party that the followers of Garagos, a Demi-God of War and
+            Destruction, are trying to not only raise him to Godhood,sB destruction of the planes,
+            in a wild war of all on all. They unleashed the <Kraken /> from Pandemonium itself!
+          </p>
+          <p>
+            For her part, however, <Peony /> is through adventuring and intends to go back to the
+            Ten Hills and die quietly in her bed. She gives <Marni /> a <Robe /> and wishes her good
+            luck saving the multiverse.
+          </p>
+        </li>
+      </ul>
       <p>
-        If the party acquires a human sacrifice, she takes it, and when they present the person to
-        her, the FEY GUARDIAN will fight them to the death.
-      </p>
-      <p>
-        If the party refuses to help the <Hag />, she will go to try to gather a sacrifice herself,
-        but <Officer />
-        's troops will find and arrest her. The <Hag /> will try to defend her actions (she was
-        attempting to steal a child through a window) by saying the party understands what is at
-        stake and sanction her actions. Therefore, if the party does not help or kill the <Hag />,
-        it automatically forfeits the <MayorsReward /> and achieves a "Wanted" status in town. The
-        party must break her out of the local jail if they want her to complete her magic. Then they
-        have to find her a tourist anyway. If they do not break her out of jail, she will count as
-        incapacitated.
-      </p>
-      <p>
-        The party (if there is a mage of a high enough level) can itself attempt to perform a spell
-        to close the gate itself. Mages can find the <Hag />
-        's Blood Magic Tome if they cast True Seeing or otherwise are able to use truesight near the{' '}
-        <Hag />
-        's burned cottage. The Blood Magic Tome will instruct the mage how to sacrifice a humanoid,
-        and *cook >:D * its blood together with certain magical plants, to seal the portal. [This is
-        a blatant attempt to make Marni commit human sacrifice.] When the party starts this, the FEY
-        GUARDIAN attacks and fights to the death. Since they are nearby the portal, monsters are
-        coming out of the portal more rapidly than usual, too. If there is any reason to believe the
-        Guards are watching the Witchers (for example, if they allowed the <Hag /> to try to fetch
-        her own human sacrifice), those guards might be able to track the Witchers down at this
-        moment and attack everybody in sight.
+        If the party successfully earns the <MayorsReward />, <Mayor /> will try and haggle it down
+        a bit before paying up.
       </p>
     </main>
-  </div>
-)
-
-export const Outcomes = () => (
-  <div>
-    <h2>Outcomes</h2>
-    <ul>
-      <p>
-        <li>
-          Rescue the <Hag /> and kill the FEY GUARDIAN -> <ChefsReward />, CHEF'S BONUS, TOWN SAVED
-          |<MayorsReward /> lost | possible FUTURE QUEST;
-        </li>
-      </p>
-      <p>
-        <li>
-          Kill both the <Hag /> and the FEY GUARDIAN -> TOWN SAVED, <ChefsReward />,{' '}
-          <MayorsReward /> | CHEF'S BONUS LOST | no FUTURE QUEST;
-        </li>
-      </p>
-      <p>
-        <li>
-          Kill the <Hag /> but not the FEY GUARDIAN -> if within 5 days, <MayorsReward /> | TOWN
-          LOST, no <ChefsReward />, CHEF'S BONUS LOST | no FUTURE QUEST;
-        </li>
-      </p>
-      <p>
-        <li>
-          Rescue the <Hag /> and ignore the FEY GUARDIAN -> barrier will temporarily be restored,
-          but situation will revert as soon as the party leaves TOWN -> <ChefsReward /> |{' '}
-          <MayorsReward />
-          lost, CHEF'S BONUS LOST, TOWN LOST | no FUTURE QUEST
-        </li>
-      </p>
-    </ul>
-    <p>
-      AUNT PEONY: she says i have been her connection to the material plane for decades since she
-      left when I was an infant. she is still trying to find her way back. There is a magical
-      disturbance now on the inner planes—feywild and the shadow realms—and she thinks she can use
-      it to get back. but not today. I should keep dreaming of her.
-      <br />
-      my powers come through the astral planes. the thread of the weave she uses to connect to me.
-      That is why magic flows right through me. great aunt peony tied the the weave itself around me
-      like a bow; that is how we remain connected.
-      <br />
-      luck as guatdian angel peony WED 10:25 PM More Info... Delete Message minauros has polluted
-      weave
-      <br />
-      purple dragon dont’t like witxhers Aunt Peony wears a Robe of Stars
-    </p>
   </div>
 )
 

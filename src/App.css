@@ -9,6 +9,9 @@
   --light: #fffdfc;
   --white: #ffffff;
 
+  /* IMAGE SHADOW */
+  --img-shadow: 0 2px 8px 1px rgba(0,0,0,0.4);
+
   /* SIZING */
   --navbar-height: 40px;
   --left-right-padding: 65px;
@@ -121,15 +124,6 @@ nav .nav-logo img {
   display: inline-block;
 }
 
-/* Marni Portrait */
-.content .overview img {
-  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.4);
-  float: left;
-  height: 300px;
-  margin-bottom: 5px;
-  margin-right: 15px;
-}
-
 .content small {
   color: var(--dnd-red);
   font-weight: bold;
@@ -139,6 +133,30 @@ nav .nav-logo img {
   color: var(--darkest);
 }
 
+/* Planes of Existence */
+.overview img {
+  float: left;
+  height: 300px;
+  margin-right: 15px;
+  margin-top: 25px;
+}
+
+/* Contract */
+.overview .contract img {
+  float: right;
+  height: 230px;
+  margin-top: -25px;
+  transform: rotate(15deg);
+}
+
+.overview .invasion img {
+  box-shadow: var(--img-shadow);
+  float: right;
+  height: 400px;
+  margin-left: 15px;
+  margin-top: -50px;
+}
+
 /* Purple Dragon Shield */
 .settings img {
   float: right;
@@ -146,8 +164,24 @@ nav .nav-logo img {
   margin-right: 15px;
 }
 
+/* Marni */
+.characters .marni img {
+  box-shadow: var(--img-shadow);
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 15px;
+  width: 150px;
+}
+
 /* Green Hag */
-.characters img {
+.characters .hag img {
+  float: right;
+  height: 300px;
+  margin-right: 15px;
+}
+
+/* Robe of Stars */
+.rewards img {
   float: right;
   height: 300px;
   margin-right: 15px;

@@ -4,7 +4,11 @@ const Footer = () => (
   <footer>
     <p>
       Made with <span className="heart">&#9829;</span> by{' '}
-      <a href="https://github.com/CharmedSatyr" rel="noreferrer noopener" target="_blank">
+      <a
+        href="https://github.com/CharmedSatyr/marni_quest"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
         CharmedSatyr
       </a>
     </p>
@@ -28,6 +32,7 @@ const Footer = () => (
       </a>
       .
     </p>
+    {/* A LINE ABOUT HOW ARTWORK LIKE MARNI BELONGS TO ITS OWNERS OR ARTISTS? */}
     <p>
       Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters
       are property of Wizards of the Coast LLC in the U.S.A. and other countries. ©2018 Wizards.
