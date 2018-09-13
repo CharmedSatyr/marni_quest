@@ -1,7 +1,8 @@
 import React from 'react'
-import logo from './D&D Transparent.png'
-import muffin from './muffin.png'
 import { Link } from 'react-router-dom'
+
+import logo from './img/D&D Transparent.png'
+import muffin from './img/muffin.png'
 
 const NavBar = () => (
   <nav>

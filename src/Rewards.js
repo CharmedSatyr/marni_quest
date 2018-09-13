@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Mayor, Peony } from './Characters'
 import { Town } from './Settings'
-import robe from './robe.jpg'
+
+import robe from './img/robe.jpg'
 
 // Reward
 const names = {

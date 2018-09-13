@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Inn, Restaurant, Town, TownHall } from './Settings'
 import { MagicalIngredients, Robe } from './Rewards'
-import HagPic from './green_hag.jpg'
-import MarniPortrait from './Marni.jpg'
+
+import HagPic from './img/green_hag.jpg'
+import MarniPortrait from './img/Marni.jpg'
 
 // Characters
 const names = {

@@ -1,10 +1,12 @@
 import React from 'react'
+
 import { Inn, Restaurant, Town, TownHall } from './Settings'
 import { Banderhobb, Chef, Hag, Marni, Mayor, SmallFey, Officer, Peony, Kraken } from './Characters'
 import { ChefsReward, MagicalIngredients, MagicalRecipes, MayorsReward, Robe } from './Rewards'
-import planes from './planes.png'
-// import contract from './letter.png'
-import astral_plane from './astral_plane.jpg'
+
+import astral_plane from './img/astral_plane.jpg'
+import planes from './img/planes.png'
+// import contract from './img/letter.png'
 
 /*** OVERVIEW ***/
 const Overview = () => (
