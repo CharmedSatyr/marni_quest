@@ -5,8 +5,10 @@ import { Banderhobb, Chef, Hag, Marni, Mayor, SmallFey, Officer, Peony, Kraken }
 import { ChefsReward, MagicalIngredients, MagicalRecipes, MayorsReward, Robe } from './Rewards'
 
 import astral_plane from './img/astral_plane.jpg'
+import mayor from './img/mayor.png'
+import officer from './img/purple_dragon_officer.png'
 import planes from './img/planes.png'
-// import contract from './img/letter.png'
+import hag_img from './img/hag.png'
 
 /*** OVERVIEW ***/
 const Overview = () => (
@@ -76,7 +78,8 @@ const Overview = () => (
           guard and chastised for not having their weapons peace-bonded, as is Cormyrean law. The
           guard supposes they didn't even register at the border garrison!
         </p>
-        <p>
+        <p className="mayor">
+          <img alt="The Mayor" src={mayor} />
           The guard wishes to place the Witchers under arrest, but the <Mayor /> intervenes and
           takes them to his office in <TownHall />. He says he will take care of everything and
           focuses on Marni in particular. He was intrigued to discover that a Moonfoot girl is not
@@ -134,7 +137,8 @@ const Overview = () => (
           a list of <MagicalIngredients /> to find on their travels and offers the adventurers a{' '}
           <ChefsReward /> if they can bring them and determine the source of the magic.
         </p>
-        <p>
+        <p className="officer">
+          <img alt="Purple Dragon Officer" src={officer} />
           As the party leaves <Restaurant />, it is confronted by another of the patrons, who
           follows them out. This is <Officer />, who explicitly distrusts Witchers and requires to
           search their bags and inspect their mercenary contract or adventurer's license. If he is
@@ -145,6 +149,7 @@ const Overview = () => (
           its business quickly and get out of <Town />.
         </p>
       </div>
+
       {/* VISITING THE HAG */}
       <div>
         <h3>Visiting the Enchantress</h3>
@@ -207,7 +212,8 @@ const Overview = () => (
         catches sight of a <Hag /> in a cave room. She looks concerned. The <Banderhobb /> attacks.
         The party may then approach the <Hag />. She will beg the Witchers not to attack!
       </p>
-      <p>
+      <p className="hag">
+        <img alt="Green Hag" src={hag_img} />
         If she is allowed to speak, the <Hag /> will explain that she has been trying to firm a
         weakness in the boundaries among the planes. The gods and evil ones, fey and shadow, usually
         have dominion over their own realms, but the transitive planes among them&mdash;the Astral
@@ -293,25 +299,25 @@ const Overview = () => (
           <p className="invasion">
             <img alt="astral plane" src={astral_plane} />
             This is the "good" course of action but also the most dangerous. If the party wants, it
-            can invade the PORTAL. There, it will eventually find {/*<Peony />*/} and the{' '}
-            {/*<Kraken />*/}. The party can go home once it defeats the <Kraken />, heads held
-            high&mdash;so long as they escape the realm before the portal collapses. The Mayor will
-            suppose they deserve <MayorsReward />.
+            can invade the PORTAL. There, it will eventually find <Peony /> and the <Kraken />. The
+            party can go home once it defeats the <Kraken />, heads held high&mdash;so long as they
+            escape the realm before the portal collapses. The Mayor will suppose they deserve{' '}
+            <MayorsReward />.
           </p>
           <p>
             <Peony /> shares her background with Marni. She also provides a notable{' '}
             <em>mea culpa</em>: On the day Marni was born, Peony visited her sister and saw the
             infant, and then she teleported to the Astral Plane, where she had ongoing research.
             This time, a Githyanki mage who had a crush on her cast a <em>geas</em> that prevented
-            her from ever trying to leave the Astral Plane without him. In the decades that
-            followed, she thought constantly about her home&mdash;specifically about Marni, her only
-            niece, whom she remembered vividly. She figures the connection, on top of her frequent
-            magical attempts and pleas to various entities to break the <em>geas</em> and let her go
-            home, caused something to rub off on Marni from one plane or other&mdash;no telling
-            which! But, no doubt about it, Marni's got a thread of the weave tied around her like a
-            bow. <Peony /> figures either something about the <Kraken /> broke the <em>geas</em>, or
-            that Githyanki mage is somewhere on Toril. Either way, Peony kisses the Prime's sweet
-            ground.
+            her from ever trying to leave the Astral Plane as long as he was there. In the decades
+            that followed, she thought constantly about her home&mdash;specifically about Marni, her
+            only niece, whom she remembered vividly. Marni was the focus of Peony's frequent magical
+            struggles and pleas to various entities to break the <em>geas</em> and return home,
+            which must have made a magical connection between them. Maybe something rubbed off on
+            Marni from one plane or other&mdash;no telling which! But, no doubt about it, Marni's
+            got a thread of the weave tied around her like a bow. <Peony /> figures either something
+            about the <Kraken /> broke the <em>geas</em>, or that Githyanki mage is somewhere on
+            Toril. Either way, Peony kisses the Prime's sweet ground.
           </p>
           <p>
             <Peony /> warns the party that the followers of Garagos, a Demi-God of War and

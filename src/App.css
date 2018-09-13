@@ -149,6 +149,27 @@ nav .nav-logo img {
   transform: rotate(15deg);
 }
 
+/* The Mayor */
+.overview .mayor img {
+  float: right;
+  margin-left: 15px;
+}
+
+/* Hag */
+.overview .hag img {
+  float: left;
+  height: 200px;
+  margin-right: 15px;
+}
+
+/* Officer */
+.overview .officer img {
+  float: right;
+  height: 400px;
+  margin: 0;
+}
+
+/* Astral Plane */
 .overview .invasion img {
   box-shadow: var(--img-shadow);
   float: right;
@@ -164,7 +185,7 @@ nav .nav-logo img {
   margin-right: 15px;
 }
 
-/* Marni */
+/* Marni Moonfoot */
 .characters .marni img {
   box-shadow: var(--img-shadow);
   float: left;
@@ -173,11 +194,13 @@ nav .nav-logo img {
   width: 150px;
 }
 
-/* Green Hag */
-.characters .hag img {
+/* Peony Brandywood */
+.characters .peony img {
+  box-shadow: var(--img-shadow);
   float: right;
-  height: 300px;
-  margin-right: 15px;
+  height: 250px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 
 /* Robe of Stars */

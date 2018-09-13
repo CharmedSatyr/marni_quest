@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Mayor, Peony } from './Characters'
 import { Town } from './Settings'
 
-import robe from './img/robe.jpg'
+import robe from './img/robe.png'
 
 // Reward
 const names = {

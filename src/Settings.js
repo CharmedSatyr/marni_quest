@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Chef, Hag, Mayor } from './Characters'
-import PurpleDragon from './img/Cormyr_symbol.jpg'
+import PurpleDragon from './img/cormyr_shield.png'
 
 // Settings
 const names = {

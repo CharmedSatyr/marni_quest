@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { Inn, Restaurant, Town, TownHall } from './Settings'
 import { MagicalIngredients, Robe } from './Rewards'
 
-import HagPic from './img/green_hag.jpg'
-import MarniPortrait from './img/Marni.jpg'
+import marni_portrait from './img/marni.jpg'
+import peony from './img/peony.jpg'
 
 // Characters
 const names = {
@@ -46,7 +46,7 @@ export const Characters = () => (
         rel="noopener noreferrer"
         target="_blank"
       >
-        <img alt="Portrait of Marni" src={MarniPortrait} title="Credit: Devon Cady-Lee" />
+        <img alt="Portrait of Marni" src={marni_portrait} title="Credit: Devon Cady-Lee" />
       </a>
       <a name="marni">{names.marni}</a> was the best cook in the Ten Hills. Folks say her
       blackcurrant pie is even better than Old Mrs. Goodbody's! Unfortunately, word began to spread
@@ -90,24 +90,12 @@ export const Characters = () => (
       pricey!). He collects MAGICAL INGREDIENTS from <Town /> and the surrounding countryside.
     </p>
 
-    <p>
+    <p className="officer">
       <a name="officer">{names.officer}</a>, a human officer serving Cormyr's famous Purple Dragons.
-      He splits his time among <TownHall />, <Inn />, and <Restaurant />; eventually summons the
-      Purple Dragons if TOWN LOST.
+      He is sometimes seen at <TownHall />, <Inn />, or <Restaurant />. He is ultimately in charge
     </p>
 
-    <p>
-      <a name="peony">{names.peony}</a>, Marni's great aunt, is a trash-talking halfling who smokes
-      a pipe and wears a <Robe />.
-    </p>
-    <p>
-      Peony is a Wizard/Cleric of the Arcana domain, but she is mostly into it for the science. She
-      runs around and takes notes on everything she's seen in the Planes and is eager to publish her
-      findings. However, her life ended up being much more adventurous than she bargained for, and
-      her actions have changed the course of Marni's life.
-    </p>
     <p className="hag">
-      <img alt="Green Hag" src={HagPic} />
       <a name="hag">The Enchantress</a>, a{' '}
       <a
         href="https://www.dndbeyond.com/monsters/green-hag"
@@ -123,6 +111,16 @@ export const Characters = () => (
       between the planes that yields the <MagicalIngredients /> <Chef /> uses. Her evil may be
       responsible for a FUTURE QUEST if she survives this one.
     </p>
+    <div className="peony">
+      <a
+        href="https://www.artstation.com/mischeviouslittleelf"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img alt={`${names.peony}`} src={peony} title="Credit: Even Amundsen" />
+      </a>
+    </div>
+
     <p>
       The <a name="kraken">{names.kraken}</a> is a seige engine created in Pandemonium to break down
       the barriers among the Planes on behalf of Lord Garagos. Or maybe an{' '}
@@ -142,6 +140,17 @@ export const Characters = () => (
         Astral Kraken
       </a>
       ?
+    </p>
+
+    <p>
+      <a name="peony">{names.peony}</a>, Marni's great aunt, is a trash-talking halfling who smokes
+      a pipe and wears a <Robe />.
+    </p>
+    <p>
+      Peony is a Wizard/Cleric of the Arcana domain, but she is mostly into it for the science. She
+      runs around and takes notes on everything she's seen in the Planes and is eager to publish her
+      findings. However, her life ended up being much more adventurous than she bargained for, and
+      her actions have changed the course of Marni's life.
     </p>
   </div>
 )
