@@ -32,7 +32,7 @@ const Footer = () => (
       </a>
       .
     </p>
-    {/* A LINE ABOUT HOW ARTWORK LIKE MARNI BELONGS TO ITS OWNERS OR ARTISTS? */}
+    <p>All artwork is property of its respective rights holders.</p>
     <p>
       Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters
       are property of Wizards of the Coast LLC in the U.S.A. and other countries. ©2018 Wizards.
