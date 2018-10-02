@@ -8,6 +8,7 @@ import peony from './img/peony.jpg'
 
 // Characters
 const names = {
+  boy: 'Rodrig',
   marni: 'Marni Moonfoot',
   mayor: 'Mayor Tibidus Wildoo',
   chef: 'Chef Ronpip Ronben',
@@ -17,8 +18,11 @@ const names = {
   banderhobb: 'banderhobb',
   smallFey: 'boggle',
   kraken: 'Planar Kraken',
+  woman: 'young woman',
 }
 
+export const Woman = () => <Link to={`/characters#woman`}>{names.boy}</Link>
+export const Boy = () => <Link to={`/characters#boy`}>{names.boy}</Link>
 export const Marni = () => <Link to={`/characters#marni`}>{names.marni}</Link>
 export const Mayor = () => <Link to={`/characters#mayor`}>{names.mayor}</Link>
 export const Chef = () => <Link to={`/characters#chef`}>{names.chef}</Link>
@@ -58,7 +62,7 @@ export const Characters = () => (
     </p>
     <p>
       After a few weeks of travel, Marni was drawn off the road by the sight of thick smoke plumes
-      and lots of shouting. She darted through the forest and came upon a tiny hamlet that was under
+      and lots of shouting. She darted through the forest and came upon a tiny hamlet under
       seige by trolls. Unfortunately, the poor townfolk had no idea how to defend themselves against
       such things. Marni tried to help, but her little sling just wasn't getting the job done.
       Suddenly, out of nowhere, a white-haired Witcher appeared in the clearing and took charge. He
@@ -84,6 +88,9 @@ export const Characters = () => (
       though the Mayor doesn't exactly flatter her.
     </p>
     <p>
+      <a name="boy">{names.boy}</a> is found missing the morning after the Witchers arrive.
+    </p>
+    <p>
       <a name="chef">{names.chef}</a>, a famous gnome chef whom Marni adores. He doesn't usually
       publish his recipes, but it is well known that he uses magical techniques and ingredients to
       dramatic culinary effect. Chef Ronben's restaurant, <Restaurant />, is legendary (and
@@ -93,6 +100,10 @@ export const Characters = () => (
     <p className="officer">
       <a name="officer">{names.officer}</a>, a human officer serving Cormyr's famous Purple Dragons.
       He is sometimes seen at <TownHall />, <Inn />, or <Restaurant />. He is ultimately in charge
+    </p>
+
+    <p>
+      <a name="woman">{names.woman}</a>, a young woman.
     </p>
 
     <p className="hag">
@@ -147,10 +158,10 @@ export const Characters = () => (
       a pipe and wears a <Robe />.
     </p>
     <p>
-      Peony is a Wizard/Cleric of the Arcana domain, but she is mostly into it for the science. She
-      runs around and takes notes on everything she's seen in the Planes and is eager to publish her
-      findings. However, her life ended up being much more adventurous than she bargained for, and
-      her actions have changed the course of Marni's life.
+      Peony is a Wizard/Cleric of Mystra (Arcana domain), but she is mostly in it for the science.
+      She runs around and takes notes on everything she's seen in the Planes and is eager to publish
+      her findings. However, her life ended up being much more adventurous than she bargained for,
+      and her actions have changed the course of Marni's life.
     </p>
   </div>
 )
