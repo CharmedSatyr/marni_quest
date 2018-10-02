@@ -1,7 +1,19 @@
 import React from 'react'
 
 import { Inn, Restaurant, Town, TownHall } from './Settings'
-import { Banderhobb, Chef, Hag, Marni, Mayor, SmallFey, Officer, Peony, Kraken } from './Characters'
+import {
+  Banderhobb,
+  Boy,
+  Chef,
+  Hag,
+  Marni,
+  Mayor,
+  SmallFey,
+  Officer,
+  Peony,
+  Kraken,
+  Woman,
+} from './Characters'
 import { ChefsReward, MagicalIngredients, MagicalRecipes, MayorsReward, Robe } from './Rewards'
 
 import astral_plane from './img/astral_plane.jpg'
@@ -50,68 +62,109 @@ const Overview = () => (
         .
       </p>
       <p className="contract">
-        {/*<img alt="a sealed envelope" src={contract} />*/}A few days later, a messenger arrives
-        with a contract for Marni from an old family acquaintance, <Mayor /> of the famous resort
-        town of <Town />! Apparently, tourists have been inexplicably disappearing for months, and
-        the Mayor is offering a <MayorsReward /> to eliminate the threat. Marni is excited not only
-        to see someone from home but because <Town /> is where the famous <Chef /> lives. Marni
-        invites her Witcher friends to come with her.
+        A few days later, a messenger arrives with a contract for Marni from an old family
+        acquaintance, <Mayor /> of the famous resort town of <Town />! Apparently, tourists have
+        been inexplicably disappearing for months, and the Mayor is offering a <MayorsReward /> to
+        eliminate the threat. Marni is excited not only to see someone from home but because
+        <Town /> is where the famous <Chef /> lives. Marni invites her Witcher friends to come with
+        her.
       </p>
       {/* THE INN */}
       <div>
         <h3>The Inn</h3>
         <p>
-          The best-known inn in town is <Inn />. When the party goes there, one of the sister-owners
-          notes that yet another pie has gone missing. She blames the local children.
+          The party arrives in <Town /> in the evening. The best-known inn in town is <Inn />, which
+          would be recommended by local pedestrians. The party would be able to eat and drink there,
+          listen to some rousing music by a visiting bard named Mahogany Deku, and get tourist
+          advice from the inn's owners, Zoe and Che. If asked, the innkeepers would recommend the
+          party visit the Goodberry Grove, which is a patch of magical berries (similar to those
+          created by the{' '}
+          <a
+            href="https://www.dndbeyond.com/spells/goodberry"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Goodberry
+          </a>{' '}
+          spell) and tended by local druids. A magical spring wells from the center of the grove and
+          infuses the patch with magic, producing unique crops and giving the town its name. The
+          innkeepers can also provide maps of faerie circles in the area, which are quite old. Local
+          folklore is filled with mentions of visits from the Fey realm!
         </p>
         <p>
           If the party tries to make any purchases or stay the night before visiting <TownHall />,
-          she refuses their gold and tells them to change their money to Cormyrean golden lions at
-          the <TownHall /> first.
+          the innkeepers refuse their gold and tell them to change their money to Cormyrean golden
+          lions at the <TownHall /> first. They'll keep a tab open for the evening since the party
+          is already settling in, and it's too late to change money.
+        </p>
+        <p>
+          In the morning, when the party goes downstairs, there is a pall over the place. A couple
+          of Cormyrean Purple Dragons are speaking with a worried-looking couple. One of the guests,
+          a little boy named <Boy />, has gone missing! If pressed, the innkeepers will admit he's
+          not the first. The Witchers can explore the empty room if they wish, but they'll find
+          nothing but (on a decent investigation check) a few strands of shadow and some
+          foul-smelling, brown slime. The boy's room was on the second floor, and there were no
+          witnesses. The boy disappeared while his parents slept in the room!
         </p>
       </div>
       {/* VISITING THE MAYOR */}
       <div>
         <h3>The Mayor</h3>
         <p>
-          When the party goes to <TownHall /> to visit <Mayor />, the adventurers are stopped by a
-          guard and chastised for not having their weapons peace-bonded, as is Cormyrean law. The
-          guard supposes they didn't even register at the border garrison!
+          When the party goes to <TownHall /> to visit <Mayor />, the adventurers are stopped by{' '}
+          <Officer /> and chastised for not having their weapons peace-bonded, as is Cormyrean law.
+          He supposes they didn't even register at the border garrison! <Officer /> explicitly
+          distrusts Witchers and requires to search their bags and inspect their mercenary contract
+          or adventurer's license. If he is contested, he will summon Purple Dragons to aid him.
+          Even if they cooperate, the officer wishes to place the Witchers under arrest on suspicion
+          of connection with <Boy />
+          's disappearance.
         </p>
         <p className="mayor">
           <img alt="The Mayor" src={mayor} />
-          The guard wishes to place the Witchers under arrest, but the <Mayor /> intervenes and
-          takes them to his office in <TownHall />. He says he will take care of everything and
-          focuses on Marni in particular. He was intrigued to discover that a Moonfoot girl is not
-          only a sorceress, but a Witcher! Now that he sees her, Marni reminds him of her Great Aunt
-          Peony Brandywood, who used to live in the forest near the Ten Hills and dance with
-          Faeries, or something like that. "She wasn't proper folk either!" he chuckles. "She'd go
-          missing for days on end and said she traiped about on the Astral Plane! We figure she
-          eventually got stuck out there. Good riddance, some thought." Marni is astonished; she
-          hadn't heard about Aunt Peony before.
+          Fortunately, the <Mayor /> intervenes and takes the party to his office in <TownHall />.
+          He says he will take care of everything and focuses on Marni in particular. He was stunned
+          to discover that a Moonfoot girl is not only a sorceress, but a Witcher! Now that he sees
+          her, Marni reminds him of her Great Aunt Peony Brandywood, who used to live in the forest
+          near the Ten Hills and dance with faeries, or something like that. "She wasn't proper folk
+          either!" he chuckles. "She'd go missing for days on end traipsing about the Astral Plane!
+          One day, she disappeared and never came back. Good riddance, we thought." Marni is
+          astonished; she hadn't heard about Aunt Peony before. The Mayor admits that he has no idea
+          why he thought to write Marni about the disappearances and seems shocked when he asks how
+          much money he offered. (Perceptive characters might suspect he's been under the influence
+          of a{' '}
+          <a
+            href="https://www.dndbeyond.com/spells/suggestion"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Suggestion
+          </a>{' '}
+          spell.)
         </p>
         <p>
-          Turning to the rest of the party, <Mayor /> offers them a <MayorsReward /> in exchange for
-          completing his contract. According to him, someone has gone missing from the town once a
-          month for the past few months, each time around the full moon. This might even have been
-          going on for longer, but its hard to keep track of when visitors come and go. Although the
-          Purple Dragons have attempted to find the killer, they have had little luck, and, now that
-          the word is out, tourism is on the wane. Victims have disappeared, often from their beds,
-          but there have been no broken windows or doors, no blood, and no tracks. There have only
-          been wisps of shadow and a few strands of foul-smelling brown slime left at the scene.{' '}
-          <Mayor /> does not know who could be responsible, but he suspects the involvement of the{' '}
-          <Hag />, who lives in a forest a few miles away from town. At the very least, she might be
-          able to provide more information. When the party accepts, the Mayor writes up a proof of
-          mercenary employment, suggesting that they show it to local law enforcement if they are
-          questioned again.
+          Turning to the rest of the party, <Mayor /> notes that they might as wel investigate.
+          According to him, there had been rumors of tourists going missing for years, but they'd
+          always been hushed up and were never investigated by his predecessors. It's hard to keep
+          track of when visitors come and go, and the Purple Dragons always have their hands full.
+          There have never been broken windows or doors, blood, or tracks to work with.
+        </p>
+
+        <p>
+          <Mayor /> does not know who could be responsible. He suggests they consult the druids down
+          at Goodberry Grove, though he considers them above reproach. If that fails, the Witchers
+          could consult the <Hag />, who lives in a forest a few miles away from town and mostly
+          keeps to herself. At the very least, she might be able to provide more information. When
+          the party accepts, the Mayor writes up a proof of mercenary employment, suggesting that
+          they show it to local law enforcement if they are questioned again.
         </p>
         <p>
           The mayor notes that the party can exchange its money for Cormyrean golden lions at the
           till at the end of the hall.
         </p>
         <p>
-          As the party leaves <TownHall />, a YOUNG WOMAN approaches them and tells them that she
-          knows people have been going missing and hopes they will keep an open mind. She says that{' '}
+          As the party leaves <TownHall />, a <Woman /> approaches them and tells them that she
+          heard there were Witchers in town and hopes they will keep an open mind. She says that{' '}
           <Mayor /> blames the <Hag /> for everything that goes wrong in <Town />, so she hopes they
           will not act without proof. She says the <Hag /> actually provides valuable services to
           the people of the town, especially the women. This said, she drops her head and runs away.
