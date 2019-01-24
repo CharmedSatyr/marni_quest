@@ -65,7 +65,7 @@ const Overview = () => (
         A few days later, a messenger arrives with a contract for Marni from an old family
         acquaintance, <Mayor /> of the famous resort town of <Town />! Apparently, tourists have
         been inexplicably disappearing for months, and the Mayor is offering a <MayorsReward /> to
-        eliminate the threat. Marni is excited not only to see someone from home but because
+        eliminate the threat. Marni is excited not only to see someone from home but because{' '}
         <Town /> is where the famous <Chef /> lives. Marni invites her Witcher friends to come with
         her.
       </p>
@@ -143,7 +143,7 @@ const Overview = () => (
           spell.)
         </p>
         <p>
-          Turning to the rest of the party, <Mayor /> notes that they might as wel investigate.
+          Turning to the rest of the party, <Mayor /> notes that they might as well investigate.
           According to him, there had been rumors of tourists going missing for years, but they'd
           always been hushed up and were never investigated by his predecessors. It's hard to keep
           track of when visitors come and go, and the Purple Dragons always have their hands full.
