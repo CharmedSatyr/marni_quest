@@ -14,7 +14,7 @@ const names = {
   chef: 'Chef Ronpip Ronben',
   officer: 'Lieutenant Carrot Saurbrand',
   peony: 'Peony Brandywood',
-  hag: 'Green Hag',
+  hag: 'Enchantress',
   banderhobb: 'banderhobb',
   smallFey: 'boggle',
   kraken: 'Planar Kraken',
@@ -62,14 +62,14 @@ export const Characters = () => (
     </p>
     <p>
       After a few weeks of travel, Marni was drawn off the road by the sight of thick smoke plumes
-      and lots of shouting. She darted through the forest and came upon a tiny hamlet under
-      seige by trolls. Unfortunately, the poor townfolk had no idea how to defend themselves against
-      such things. Marni tried to help, but her little sling just wasn't getting the job done.
-      Suddenly, out of nowhere, a white-haired Witcher appeared in the clearing and took charge. He
-      gave a few curt commands to Marni, and the two of them helped the villagers use fire and acid
-      to drive away the invaders. Marni had a lot of luck targeting her magical bonfires, and she
-      used up all her vinegar on the trolls who went down. Marni's energy and can-do attitude
-      inspired every good person in the hamlet, and folks called her a hero that day.
+      and lots of shouting. She darted through the forest and came upon a tiny hamlet under seige by
+      trolls. Unfortunately, the poor townfolk had no idea how to defend themselves against such
+      things. Marni tried to help, but her little sling just wasn't getting the job done. Suddenly,
+      out of nowhere, a white-haired Witcher appeared in the clearing and took charge. He gave a few
+      curt commands to Marni, and the two of them helped the villagers use fire and acid to drive
+      away the invaders. Marni had a lot of luck targeting her magical bonfires, and she used up all
+      her vinegar on the trolls who went down. Marni's energy and can-do attitude inspired every
+      good person in the hamlet, and folks called her a hero that day.
     </p>
     <p>
       Marni gratefully asked the Witcher, who introduced himself as Dravin, if he could teach her to
